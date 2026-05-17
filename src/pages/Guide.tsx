@@ -32,10 +32,12 @@ export default function Guide() {
   const deskripsi = settings?.panduanDeskripsi || "Persiapkan dokumen berikut sebelum mulai mengisi formulir pendaftaran.";
   const peringatan = settings?.panduanPeringatan || "Pastikan semua dokumen di-scan atau difoto dengan jelas dan dapat terbaca. Format file yang disarankan adalah JPG, PNG, atau PDF dengan ukuran maksimal 2MB per file.";
   const dokumen = settings?.panduanDokumen || [
-    { id: "1", icon: "FileDigit", title: "Kartu Keluarga (KK)", description: "Asli atau fotokopi yang dilegalisir. Pastikan NIK dan nama calon siswa tercantum dengan benar." },
-    { id: "2", icon: "FileBadge", title: "Akta Kelahiran", description: "Dokumen asli atau fotokopi legalisir untuk verifikasi usia dan data diri calon siswa." },
-    { id: "3", icon: "FileImage", title: "Pas Foto Terbaru", description: "Pas foto berwarna ukuran 3x4 dengan latar belakang merah atau biru." },
-    { id: "4", icon: "FileText", title: "Ijazah / SKHUN (Jika Ada)", description: "Surat Keterangan Lulus atau Ijazah dari jenjang pendidikan sebelumnya (TK/PAUD)." }
+    { id: "1", icon: "FileBadge", title: "Akta Kelahiran", description: "Dokumen asli atau fotokopi legalisir untuk verifikasi usia dan data diri calon siswa." },
+    { id: "2", icon: "FileBadge", title: "Kartu Keluarga (KK)", description: "Asli atau fotokopi yang dilegalisir. Pastikan NIK dan nama calon siswa tercantum dengan benar." },
+    { id: "3", icon: "FileText", title: "Ijazah / SKHUN (Jika Ada)", description: "Surat Keterangan Lulus atau Ijazah dari jenjang pendidikan sebelumnya (SMP)." },
+    { id: "4", icon: "FileText", title: "Sertifikat TKA", description: "Sertifikat Hasil Tes Kemampuan Akademik." },
+    { id: "5", icon: "FileText", title: "Surat Sehat", description: "Surat Keterangan Sehat yang diperoleh dari instansi kesehatan pemerintah (Puskesmas / Ruamh Sakit)." },
+    
   ];
   const alur = settings?.panduanAlur || [
     "Siapkan seluruh dokumen persyaratan dalam bentuk file digital (foto/scan).",
